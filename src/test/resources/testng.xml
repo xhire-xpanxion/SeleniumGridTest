@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5" data-provider-thread-count="1">
+<suite name="Tests" verbose="5" thread-count="3" parallel="tests">
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
 		    <class name="xpanxion.pages.HomePageTest"/>
 		</classes>
-	</test>  
+	</test>
+	<test name="Test2">
+		<parameter name="path" value="/"/>
+		<classes>
+		    <class name="xpanxion.pages.HomePageTest"/>
+		</classes>
+	</test>
 </suite>
